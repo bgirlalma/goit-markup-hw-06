@@ -238,11 +238,11 @@ a{
     padding: 16px 32px;
     margin-top: 48px;
     cursor: pointer;
-    background: var(--type-color);
+    background-color: var(--type-color);
     border: 0;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     font-family: 'Roboto';
     font-style: normal;
@@ -601,7 +601,7 @@ a{
     height: 100%;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%; 
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-link:hover, .footer-link:focus{
@@ -613,6 +613,67 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.form-group{
+   
+}
+
+.footer-form {
+    display: flex;
+    position: relative;
+    margin-left: 80px;
+}
+.form-title {
+    padding-left: 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin-left: 80px;
+    margin-bottom: 16px;
+}
+
+.subscribe{
+    font-weight: inherit;
+    min-width: 264px;
+    height: 40px;
+    padding-left: 16px;
+    background-color: var(--main-color);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+}
+
+.button-form {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    min-width: 165px;
+    margin-left: 24px;
+    background-color: #4D5AE5;
+    color: #FFFFFF;
+    border: 0;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    padding: 8px 24px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+}
+
+.button-form:is(:hover, :focus) {
+    background-color: #404BBF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
+.span{
+    padding-right: 16px;
+}
+.svg-form {
+    position: absolute;
 }
 
 /* Footer end */
