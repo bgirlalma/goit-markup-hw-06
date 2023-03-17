@@ -451,8 +451,8 @@
 </div>
 </footer>
 
-<!-- Modal Start -->
-    <div class="backdrop is-hidden" data-modal>
+<!-- Modal Start --> is-hidden
+    <div class="backdrop " data-modal>
         <div class="modal">
            
         <button type="button" class="type-close" data-modal-close>
@@ -460,6 +460,49 @@
                 <use href="./images/icon.svg/sprite-icon.svg#icon-close"></use>
             </svg>
         </button>
+        <h3 class="modal-title">Leave your contacts and we will call you back</h3>
+        <form class="form-modal">
+            
+            
+                <div class="form-modal-group">
+                    <label class="label-modal">
+                        <span>Name</span>
+                <input class="input-modal" type="person" name="person">
+            </label>
+                <svg class="form-modal-svg" width="12" height="12">
+                    <use href="./images/icon.svg/sprite-icon.svg#icon-person"></use>
+                </svg>
+            </div>
+
+            <div class="form-modal-group">
+                <label class="label-modal">
+                    <span>Phone</span>
+                <input class="input-modal" type="phone" name="phone">
+                </label>
+                <svg class="form-modal-svg" width="12" height="12">
+                    <use href="./images/icon.svg/sprite-icon.svg#icon-tel"></use>
+                </svg>
+            </div>
+            <div class="form-modal-group">
+                <label class="label-modal">
+                    <span>Email</span>
+                <input class="input-modal" type="email" name="email">
+                </label>
+                <svg class="form-modal-svg" width="12" height="12">
+                    <use href="./images/icon.svg/sprite-icon.svg#icon-sms"></use>
+                </svg>
+            </div>
+        </label>
+        <label class="label-modal">
+            <span>Comment</span>
+            <textarea class="textarea" name="Comment" id="Comment" cols="30" rows="10" placeholder="Text input">
+            </textarea>
+            </label>
+
+            <!-- <input type="checkbox">
+            <p>I accept the terms and conditions of the <a>Privacy Policy</a></p> -->
+            <button class="form-type" type="button">Send</button>
+        </form>
         </div>
     </div>
 <!-- Modal end -->
