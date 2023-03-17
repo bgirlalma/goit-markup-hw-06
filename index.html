@@ -433,12 +433,12 @@
         </li>
     </ul>
 </div>
-<form class="form-group">
+<form class="footer-form-group">
     
     <h3 class="form-title">Subscribe</h3>
    <div class="form-group">
         <div class="footer-form">
-    <input class="subscribe" type="email" name="email" placeholder="E-mail">
+    <input class="subscribe" type="email" name="email" placeholder="E-mail" required>
     
     <button type="submit" class="button-form"><span class="span">Subscribe</span>
     <svg class="svg-form" width="24" height="24">
@@ -467,7 +467,7 @@
                 <div class="form-modal-group">
                     <label class="label-modal">
                         <span>Name</span>
-                <input class="input-modal" type="person" name="person">
+                <input class="input-modal" type="person" name="person" required>
             </label>
                 <svg class="form-modal-svg" width="12" height="12">
                     <use href="./images/icon.svg/sprite-icon.svg#icon-person"></use>
@@ -477,16 +477,17 @@
             <div class="form-modal-group">
                 <label class="label-modal">
                     <span>Phone</span>
-                <input class="input-modal" type="phone" name="phone">
-                </label>
+                <input class="input-modal" type="phone" name="phone" required>
+            </label>
                 <svg class="form-modal-svg" width="12" height="12">
                     <use href="./images/icon.svg/sprite-icon.svg#icon-tel"></use>
                 </svg>
             </div>
+
             <div class="form-modal-group">
                 <label class="label-modal">
                     <span>Email</span>
-                <input class="input-modal" type="email" name="email">
+                <input class="input-modal" type="email" name="email"  required>
                 </label>
                 <svg class="form-modal-svg" width="12" height="12">
                     <use href="./images/icon.svg/sprite-icon.svg#icon-sms"></use>
@@ -495,13 +496,22 @@
         </label>
         <label class="label-modal">
             <span>Comment</span>
-            <textarea class="textarea" name="Comment" id="Comment" cols="30" rows="10" placeholder="Text input">
-            </textarea>
-            </label>
-
-            <!-- <input type="checkbox">
-            <p>I accept the terms and conditions of the <a>Privacy Policy</a></p> -->
+            <textarea class="textarea-form" name="comment" placeholder="Text input">
+            </textarea></label>
+            
+                <div class="checkbox-modal">
+        
+            <input id="offcheckbox" type="checkbox" name="offcheckbox" value="" class="input-offcheckbox" visuall-hidden>
+            <span class="checkbox-icon">
+                <svg class="offcheckbox-icon" width="10" height="8">
+                    <use href="./images/icon.svg/sprite-icon.svg#icon-check"></use>
+                </svg>
+            </span>
+           <label for="offcheckbox" class="modal-desc">I accept the terms and conditions of the <a class="privacy-policy-link" href="">Privacy Policy</a></label>
+                </div>
+                <div class="modal-button">
             <button class="form-type" type="button">Send</button>
+                </div>
         </form>
         </div>
     </div>
