@@ -779,6 +779,7 @@ a{
 .input-modal{
     width: 100%;
     height: 60px;
+    padding-left: 36px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px; 
     outline: transparent; 
@@ -801,8 +802,12 @@ a{
     margin-left: 19px;
 }
 
+
 .textarea-form {
+    display: block;
     width: 100%;
+    min-height: 120px;
+    padding-left: 16px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     resize: none;
@@ -827,11 +832,13 @@ a{
     margin-right: 8px;
 }
 
-.checkbox-icon{
-  background-color: #404BBF;
+.visually-hidden{
+    display: none;
 }
 
 .modal-desc{
+    display: flex;
+    align-items: center;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.3;
@@ -839,7 +846,34 @@ a{
     color: #757575;
 }
 
+.modal-desc::before{
+    
+}
+
+.modal-desc span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    border: 1.25px solid #2E2F42;
+    border-radius: 2px;
+    margin-right: 8px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-offcheckbox:checked:focus + .modal-desc span{
+    fill: #FFFFFF;
+    background-color: #404BBF;
+    border-color: #404BBF;
+}
+
+.input-offcheckbox:checked + .modal-desc::before{
+   
+}
+
 .privacy-policy-link{
+    margin-left: 4px;
     color: rgba(77, 90, 229, 1);
 }
 .form-type{
