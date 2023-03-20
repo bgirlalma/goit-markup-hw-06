@@ -743,6 +743,11 @@ a{
     fill: currentColor;
 }
 
+.form-modal-group{
+    padding: 0;
+    margin: 0;
+}
+
 .form-modal {
 
 }
@@ -774,11 +779,13 @@ a{
 
 .form-modal-group{
     position: relative;
+   
 }
 
 .input-modal{
     width: 100%;
     height: 40px;
+    padding: 0;
     padding-left: 36px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px; 
@@ -795,11 +802,12 @@ a{
 }
 
 .form-modal-svg {
+    color: var(--main-color);
     position: absolute;
-    left: 0;
+    left: 19px;
     top: 50%;
-    transform: translate(-50%);
-    margin-left: 19px;
+    transform: translateY(-50%);
+   
 }
 
 
