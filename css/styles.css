@@ -574,10 +574,6 @@ a{
    
 }
 
-.wrapper{
-    
-}
-
 .footer-item {
     margin-bottom: 0;
     padding-left: 0;
@@ -615,6 +611,10 @@ a{
     align-items: center;
 }
 
+.footer-form-group{
+    margin-left: 80px;
+}
+
 .form-group{
    
 }
@@ -622,7 +622,7 @@ a{
 .footer-form {
     display: flex;
     position: relative;
-    margin-left: 80px;
+   
 }
 .form-title {
     padding-left: 0;
@@ -631,7 +631,6 @@ a{
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #FFFFFF;
-    margin-left: 80px;
     margin-bottom: 16px;
 }
 
@@ -779,7 +778,7 @@ a{
 
 .input-modal{
     width: 100%;
-    height: 60px;
+    height: 40px;
     padding-left: 36px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px; 
@@ -874,7 +873,7 @@ a{
 .form-type{
     min-width: 169px;
     padding: 16px 32px;
-    margin-top: 40px;
+    margin: 24px 0;
     cursor: pointer;
     background-color: var(--type-color);
     border: 0;
